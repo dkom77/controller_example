@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import javax.sql.DataSource;
 
 @Configuration
-public class ServiceConfig {
+public class AppConfig {
 
     @Autowired
     Environment env;
@@ -29,7 +29,4 @@ public class ServiceConfig {
                 .password(env.getProperty("datasource.password"))
                 .build();
     }
-
-
-
 }
