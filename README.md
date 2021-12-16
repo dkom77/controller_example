@@ -9,6 +9,7 @@ datasource.username = sa
 datasource.password = pswd
 
 ### Создание клиента
+```blocks
 curl --location --request POST 'http://localhost:5555/register' \
 --header 'Content-Type: application/xml' \
 --data-raw '<?xml version="1.0" encoding="utf-8"?>
@@ -17,8 +18,10 @@ curl --location --request POST 'http://localhost:5555/register' \
 <extra name="login">123456</extra>
 <extra name="password">pwd</extra>    
 </request>'
+```
 
 ### Получение баланса
+```blocks
 curl --location --request POST 'http://localhost:5555/balance' \
 --header 'Content-Type: application/xml' \
 --data-raw '<?xml version="1.0" encoding="utf-8"?>
@@ -27,5 +30,6 @@ curl --location --request POST 'http://localhost:5555/balance' \
 <extra name="login">123456</extra>
 <extra name="password">pwd</extra>    
 </request>'
+```
 
 
